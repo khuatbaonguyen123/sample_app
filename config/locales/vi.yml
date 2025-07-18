@@ -1,0 +1,32 @@
+vi:
+  static_pages:
+    home:
+      title: "Trang chủ"
+      link: "Trang chủ Ruby on Rails Tutorial"
+      description_html: "Đây là trang chủ của ứng dụng mẫu %{link}."
+
+    help:
+      title: "Trợ giúp"
+      link_1: "Trang trợ giúp RailsTutorial"
+      link_2: "Cuốn sách <em>Ruby on Rails Tutorial</em>"
+      paragraph_html: >
+        Nhận trợ giúp về Ruby on Rails Tutorial tại %{link_1}.
+        Để được hỗ trợ về ứng dụng mẫu này, hãy xem %{link_2}.
+
+    contact:
+      title: "Liên hệ"
+      description: "Chào bạn, Khuat Bao Nguyen"
+
+  header:
+    logo: "Ứng dụng mẫu"
+    base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    contact: "Liên hệ"
+    microposts: "Bài đăng"
+    english: "Tiếng Anh"
+    vietnamese: "Tiếng Việt"
+
+  microposts:
+    index:
+      title: "Bài đăng"

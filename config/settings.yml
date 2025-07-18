@@ -1,0 +1,14 @@
+defaults: &defaults
+  rails_tutorial:
+    homepage_url: "http://www.railstutorial.org/"
+    help_url: "http://www.railstutorial.org/help"
+    book_url: "http://www.railstutorial.org/book"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

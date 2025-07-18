@@ -1,0 +1,9 @@
+<% provide :title, t(".title") %>
+
+<h1><%= t(".title") %></h1>
+<p>
+  <%= t(".paragraph_html",
+        link_1: link_to(t(".link_1"), Settings.defaults.rails_tutorial.help_url),
+        link_2: link_to(t(".link_2").html_safe, Settings.defaults.rails_tutorial.book_url)
+      ).html_safe %>
+</p>
