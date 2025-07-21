@@ -1,0 +1,7 @@
+<% provide :title, t(".title") %>
+
+<h1><%= t(".title") %></h1>
+<p>
+  <%= t(".description_html", link: link_to(t(".link"),
+  Settings.defaults.rails_tutorial.homepage_url)).html_safe %>
+</p>
