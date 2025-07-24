@@ -30,6 +30,12 @@ Style/EmptyLiteral:
   Description: "Prefer literals to Array.new/Hash.new/String.new."
   Enabled: false
 
+Layout/SpaceBeforeBlockBraces:
+  Description: >-
+                 Checks that the left block brace has or doesn't have space
+                 before it.
+  Enabled: false
+
 Style/ClassAndModuleChildren:
   Description: "Checks style of children classes and modules."
   Enabled: false

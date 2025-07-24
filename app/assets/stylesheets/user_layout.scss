@@ -1,0 +1,46 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+/* sidebar */
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin: 0 0 3px 0;
+    }
+  }
+}
+
+/* forms */
+input,
+textarea,
+select,
+.uneditable-input {
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto !important;
+}

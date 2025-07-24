@@ -24,8 +24,16 @@ vi:
     help: "Trợ giúp"
     contact: "Liên hệ"
     microposts: "Bài đăng"
+    signup: "Đăng ký"
     english: "Tiếng Anh"
     vietnamese: "Tiếng Việt"
+
+  error_messages:
+    the_form_contains_html: "Biểu mẫu có %{count} lỗi."
+
+  time:
+    formats:
+      long: "%m/%d/%Y %H:%M"
 
   microposts:
     index:
