@@ -24,8 +24,16 @@ en:
     help: "Help"
     contact: "Contact"
     microposts: "Microposts"
+    signup: "Sign up"
     english: "English"
     vietnamese: "Vietnamese"
+
+  error_messages:
+    the_form_contains_html: "The form contains %{count} error(s)."
+
+  time:
+    formats:
+      long: "%m/%d/%Y %H:%M"
 
   microposts:
     index:

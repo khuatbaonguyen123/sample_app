@@ -1,24 +1,19 @@
 en:
-  activerecord:
-    models:
-      user: "User"
-    attributes:
-      user:
-        name: "Name"
-        email: "Email"
-        birthday: "Birthday"
-        password: "Password"
-        password_confirmation: "Password confirmation"
-    errors:
-      models:
-        user:
-          attributes:
-            birthday:
-              in_past: "must not be more than 100 years ago"
-              in_future: "must not be in the future"
-  errors:
-    messages:
-      blank: "can't be blank"
-      invalid: "is invalid"
-      taken: "has already been taken"
-      too_long: "is too long (maximum is %{count} characters)"
+  users:
+    new:
+      title: "Sign Up"
+      submit: "Create my account"
+      name: "Name"
+      email: "Email"
+      birthday: "Date of birth"
+      gender: "Gender"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+
+    show:
+      created_at: "Created at:"
+      updated_at: "Last updated at:"
+      not_found: "Not found user!"
+
+    create:
+      success_message: "User created successfully"

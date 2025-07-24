@@ -1,24 +1,19 @@
 vi:
-  activerecord:
-    models:
-      user: "Người dùng"
-    attributes:
-      user:
-        name: "Tên"
-        email: "Email"
-        birthday: "Ngày sinh"
-        password: "Mật khẩu"
-        password_confirmation: "Xác nhận mật khẩu"
-    errors:
-      models:
-        user:
-          attributes:
-            birthday:
-              in_past: "phải nằm trong vòng 100 năm trở lại"
-              in_future: "không được lớn hơn ngày hiện tại"
-  errors:
-    messages:
-      blank: "không được để trống"
-      invalid: "không hợp lệ"
-      taken: "đã được sử dụng"
-      too_long: "quá dài (tối đa %{count} ký tự)"
+  users:
+    new:
+      title: "Đăng ký"
+      submit: "Tạo tài khoản"
+      name: "Họ và tên"
+      email: "Email"
+      birthday: "Ngày sinh"
+      gender: "Giới tính"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+
+    show:
+      created_at: "Được tạo lúc:"
+      updated_at: "Được cập nhật lần cuối vào lúc:"
+      not_found: "Không tìm thấy người dùng!"
+
+    create:
+      success_message: "Người dùng tạo thành công"

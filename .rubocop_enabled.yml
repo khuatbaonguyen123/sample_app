@@ -441,12 +441,6 @@ Layout/SpaceAfterSemicolon:
   Description: "Use spaces after semicolons."
   Enabled: true
 
-Layout/SpaceBeforeBlockBraces:
-  Description: >-
-                 Checks that the left block brace has or doesn't have space
-                 before it.
-  Enabled: true
-
 Layout/SpaceBeforeComma:
   Description: "No spaces before commas."
   Enabled: true
