@@ -1,20 +1,22 @@
 class UsersController < ApplicationController
   before_action :load_user, only: %i(show)
 
+  # GET /signup
   def new
     @user = User.new
   end
 
+  # GET /users/:id
   def show; end
 
+  # POST /signup
   def create
     @user = User.new user_params
 
     if @user.save
-      flash[:success] = t(".success_message")
-      redirect_to @user, status: :see_other
+      handle_successful_signup
     else
-      render :new, status: :unprocessable_entity
+      handle_failed_signup
     end
   end
 
@@ -30,5 +32,16 @@ class UsersController < ApplicationController
 
     flash[:warning] = t(".not_found")
     redirect_to root_path
+  end
+
+  def handle_successful_signup
+    reset_session
+    log_in @user
+    flash[:success] = t(".success_message")
+    redirect_to @user, status: :see_other
+  end
+
+  def handle_failed_signup
+    render :new, status: :unprocessable_entity
   end
 end

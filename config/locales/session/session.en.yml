@@ -1,0 +1,12 @@
+en:
+  sessions:
+    new:
+      title: "Log in"
+      submit: "Log in"
+      email: "Email"
+      password: "Password"
+      new_user?: "New user?"
+      sign_up_now!: "Sign up now!"
+
+    create:
+      invalid_email_password_combination: "Invalid email/password combination."
