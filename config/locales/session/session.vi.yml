@@ -5,6 +5,7 @@ vi:
       submit: "Đăng nhập"
       email: "Email"
       password: "Mật khẩu"
+      remember: "Nhớ tôi"
       new_user?: "Người dùng mới?"
       sign_up_now!: "Đăng ký ngay!"
 

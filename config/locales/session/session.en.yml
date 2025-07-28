@@ -5,6 +5,7 @@ en:
       submit: "Log in"
       email: "Email"
       password: "Password"
+      remember: "Remember me"
       new_user?: "New user?"
       sign_up_now!: "Sign up now!"
 

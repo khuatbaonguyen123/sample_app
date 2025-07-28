@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  REMEMBER_ME = "1".freeze
+
   # GET /login
   def new; end
 
@@ -23,6 +25,7 @@ class SessionsController < ApplicationController
   def handle_successful_login user
     reset_session
     log_in user
+    remember_cookies(user) if params.dig(:session, :remember_me) == REMEMBER_ME
     redirect_to user, status: :see_other
   end
 
