@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
     resources :users, only: %i(show edit update index destroy)
 
+    resources :account_activations, only: :edit
+
     resources :microposts, only: [:index]
   end
 end

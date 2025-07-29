@@ -26,6 +26,7 @@ vi:
 
     create:
       success_message: "Người dùng tạo thành công"
+      check_email: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản"
 
     edit:
       title: "Chỉnh sửa người dùng"

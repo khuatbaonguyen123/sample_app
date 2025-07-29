@@ -26,6 +26,7 @@ en:
 
     create:
       success_message: "User created successfully"
+      check_email: "Please check your email to activate your account"
 
     edit:
       title: "Edit user"
