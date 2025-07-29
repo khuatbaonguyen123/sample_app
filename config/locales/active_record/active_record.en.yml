@@ -23,3 +23,4 @@ en:
       invalid: "is invalid"
       taken: "has already been taken"
       too_long: "is too long (maximum is %{count} characters)"
+      too_short: "is too short (minimum is %{count} characters)"

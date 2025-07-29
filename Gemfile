@@ -52,6 +52,12 @@ gem "config"
 # Add gem bcrypt
 gem "bcrypt", "~> 3.1.7"
 
+# Add gem faker
+gem "faker", "2.21.0"
+
+# Add gem pagy for pagination
+gem "pagy"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
 # gem "image_processing", "~> 1.2"
 

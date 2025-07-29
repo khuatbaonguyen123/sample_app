@@ -1,0 +1,23 @@
+<%= form_with(model: @user, url: local_assigns[:url]) do |f| %>
+  <%= render "shared/error_messages", object: @user %>
+
+  <%= f.label :name, t("users.form.name") %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <%= f.label :email, t("users.form.email") %>
+  <%= f.email_field :email, class: "form-control" %>
+
+  <%= f.label :birthday, t("users.form.birthday") %>
+  <%= f.date_field :birthday, class: "form-control", max: Date.today %>
+
+  <%= f.label :gender, t("users.form.gender") %>
+  <%= f.select :gender, options_for_select(gender_options_for_select), {}, class: "form-control" %>
+
+  <%= f.label :password, t("users.form.password") %>
+  <%= f.password_field :password, class: "form-control" %>
+
+  <%= f.label :password_confirmation, t("users.form.password_confirmation") %>
+  <%= f.password_field :password_confirmation, class: "form-control" %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
