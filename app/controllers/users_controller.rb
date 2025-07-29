@@ -90,10 +90,9 @@ class UsersController < ApplicationController
   end
 
   def handle_successful_signup
-    reset_session
-    log_in @user
-    flash[:success] = t(".success_message")
-    redirect_to @user, status: :see_other
+    @user.send_activation_email
+    flash[:info] = t(".check_email")
+    redirect_to root_path, status: :see_other
   end
 
   def handle_failed_signup

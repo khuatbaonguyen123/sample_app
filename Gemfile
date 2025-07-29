@@ -58,6 +58,9 @@ gem "faker", "2.21.0"
 # Add gem pagy for pagination
 gem "pagy"
 
+# Add gem figaro for environment variables
+gem "figaro"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
 # gem "image_processing", "~> 1.2"
 

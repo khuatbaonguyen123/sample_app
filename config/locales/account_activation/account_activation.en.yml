@@ -1,0 +1,6 @@
+en:
+  account_activations:
+    edit:
+      user_not_found: "User not found"
+      invalid_activation_link: "Invalid activation link"
+      success_message: "Account activated!"

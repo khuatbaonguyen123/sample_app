@@ -4,6 +4,12 @@ defaults: &defaults
     help_url: "http://www.railstutorial.org/help"
     book_url: "http://www.railstutorial.org/book"
 
+  mailer:
+    email_from_address: "noreply@example.com"
+    mailer_layout: "mailer"
+
+  host: "http://localhost:3000"
+
 development:
   <<: *defaults
 
