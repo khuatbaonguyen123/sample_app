@@ -1,9 +1,11 @@
 class User < ApplicationRecord
   has_secure_password
+  attr_accessor :remember_token
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   MAX_NAME_LENGTH = 50
   MAX_EMAIL_LENGTH = 255
+  MINIMUM_PASSWORD_LENGTH = 6
   HUNDRED_YEARS = 100
   USER_PERMIT = %i(
     name
@@ -27,9 +29,11 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}, uniqueness: true
   validates :birthday, presence: true
   validates :gender, presence: true
+  validates :password, presence: true,
+    length: {minimum: MINIMUM_PASSWORD_LENGTH}, allow_nil: true
   validate :birthday_within_last_100_years
 
-  attr_accessor :remember_token
+  scope :newest, -> {order(created_at: :desc)}
 
   class << self
     def digest string

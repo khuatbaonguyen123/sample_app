@@ -1,14 +1,23 @@
 vi:
   users:
+    load_user:
+      not_found: "Không tìm thấy người dùng"
+
+    logged_in_user:
+      please_log_in: "Vui lòng đăng nhập để tiếp tục"
+
+    current_user:
+      not_authorized: "Bạn không có quyền truy cập vào người dùng này"
+
+    admin_user:
+      not_authorized: "Bạn không có quyền thực hiện hành động này"
+
     new:
       title: "Đăng ký"
       submit: "Tạo tài khoản"
-      name: "Họ và tên"
-      email: "Email"
-      birthday: "Ngày sinh"
-      gender: "Giới tính"
-      password: "Mật khẩu"
-      password_confirmation: "Xác nhận mật khẩu"
+
+    index:
+      title: "Người dùng"
 
     show:
       created_at: "Được tạo lúc:"
@@ -17,3 +26,28 @@ vi:
 
     create:
       success_message: "Người dùng tạo thành công"
+
+    edit:
+      title: "Chỉnh sửa người dùng"
+      save_changes: "Lưu thay đổi"
+      change_img: "Thay đổi ảnh đại diện"
+
+    update:
+      success_message: "Người dùng đã được cập nhật thành công"
+
+    destroy:
+      success_message: "Người dùng đã bị xóa thành công"
+
+    form:
+      name: "Họ và tên"
+      email: "Email"
+      birthday: "Ngày sinh"
+      gender: "Giới tính"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+
+    actions:
+      delete: "Xóa người dùng"
+
+    messages:
+      confirm_delete: "Bạn có chắc chắn muốn xóa người dùng này không?"

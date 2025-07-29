@@ -1,14 +1,23 @@
 en:
   users:
+    load_user:
+      not_found: "User not found"
+
+    logged_in_user:
+      please_log_in: "Please log in to continue"
+
+    current_user:
+      not_authorized: "You are not authorized to access this user"
+
+    admin_user:
+      not_authorized: "You are not authorized to perform this action"
+
     new:
       title: "Sign Up"
       submit: "Create my account"
-      name: "Name"
-      email: "Email"
-      birthday: "Date of birth"
-      gender: "Gender"
-      password: "Password"
-      password_confirmation: "Password Confirmation"
+
+    index:
+      title: "Users"
 
     show:
       created_at: "Created at:"
@@ -17,3 +26,28 @@ en:
 
     create:
       success_message: "User created successfully"
+
+    edit:
+      title: "Edit user"
+      save_changes: "Save changes"
+      change_img: "Change image"
+
+    update:
+      success_message: "User updated successfully"
+
+    destroy:
+      success_message: "User deleted successfully"
+
+    form:
+      name: "Name"
+      email: "Email"
+      birthday: "Date of birth"
+      gender: "Gender"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+
+    actions:
+      delete: "Delete user"
+
+    messages:
+      confirm_delete: "Are you sure you want to delete this user?"
