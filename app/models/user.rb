@@ -1,12 +1,13 @@
 class User < ApplicationRecord
   has_secure_password
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   MAX_NAME_LENGTH = 50
   MAX_EMAIL_LENGTH = 255
   MINIMUM_PASSWORD_LENGTH = 6
   HUNDRED_YEARS = 100
+  RESET_EXPIRED_HOURS = 2
   USER_PERMIT = %i(
     name
     email
@@ -78,6 +79,22 @@ class User < ApplicationRecord
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  # Sets the password reset attributes.
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_attribute(:reset_digest, User.digest(reset_token))
+    update_attribute(:reset_sent_at, Time.zone.now)
+  end
+
+  def password_reset_expired?
+    reset_sent_at < RESET_EXPIRED_HOURS.hours.ago
+  end
+
+  # Sends password reset email.
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
   end
 
   private

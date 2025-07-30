@@ -35,7 +35,7 @@ class SessionsController < ApplicationController
     redirect_to root_path, status: :see_other
   end
 
-  def handle_successful_login(user)
+  def handle_successful_login user
     forwarding_url = session[:forwarding_url]
 
     reset_session
