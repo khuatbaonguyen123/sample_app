@@ -1,0 +1,4 @@
+en:
+  js:
+    errors:
+      too_large: "The uploaded image exceeds the allowed size (5MB)."

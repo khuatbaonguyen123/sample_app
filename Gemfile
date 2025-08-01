@@ -61,6 +61,12 @@ gem "pagy"
 # Add gem figaro for environment variables
 gem "figaro"
 
+gem "active_storage_validations", "0.9.8"
+gem "image_processing", "~> 1.12.2"
+
+# Add gem i18n-js for internationalization
+gem "i18n-js", "~> 3.9.2"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
 # gem "image_processing", "~> 1.2"
 

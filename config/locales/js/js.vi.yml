@@ -1,0 +1,4 @@
+vi:
+  js:
+    errors:
+      too_large: "Anh tải lên vượt quá dung lượng cho phép (5MB)."

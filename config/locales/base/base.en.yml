@@ -4,6 +4,7 @@ en:
       title: "Home"
       link: "Ruby on Rails Tutorial Homepage"
       description_html: "This is the home page for the %{link} sample application."
+      micropost_feed: "Micropost feed"
 
     help:
       title: "Help"
@@ -37,10 +38,14 @@ en:
   error_messages:
     the_form_contains_html: "The form contains %{count} error(s)."
 
+  micropost_form:
+    placeholder: "What's on your mind?"
+    submit: "Post"
+
+  user_info:
+    view_profile: "View profile"
+    micropost_count: "Microposts count: %{count}"
+
   time:
     formats:
       long: "%m/%d/%Y %H:%M"
-
-  microposts:
-    index:
-      title: "Microposts"
