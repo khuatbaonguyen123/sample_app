@@ -42,6 +42,10 @@ en:
     placeholder: "What's on your mind?"
     submit: "Post"
 
+  stats:
+    following: "Following"
+    followers: "Followers"
+
   user_info:
     view_profile: "View profile"
     micropost_count: "Microposts count: %{count}"

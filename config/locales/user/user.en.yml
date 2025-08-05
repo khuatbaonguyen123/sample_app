@@ -40,6 +40,12 @@ en:
     destroy:
       success_message: "User deleted successfully"
 
+    following:
+      following_title: "Following"
+
+    followers:
+      followers_title: "Followers"
+
     form:
       name: "Name"
       email: "Email"
@@ -53,3 +59,13 @@ en:
 
     messages:
       confirm_delete: "Are you sure you want to delete this user?"
+
+    show_follow:
+      microposts: "Microposts"
+      view_profile: "View profile"
+
+    follow:
+      follow: "Follow"
+
+    unfollow:
+      unfollow: "Unfollow"
