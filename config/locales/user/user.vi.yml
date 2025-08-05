@@ -40,6 +40,12 @@ vi:
     destroy:
       success_message: "Người dùng đã bị xóa thành công"
 
+    following:
+      following_title: "Đang theo dõi"
+
+    followers:
+      followers_title: "Người theo dõi"
+
     form:
       name: "Họ và tên"
       email: "Email"
@@ -53,3 +59,13 @@ vi:
 
     messages:
       confirm_delete: "Bạn có chắc chắn muốn xóa người dùng này không?"
+
+    show_follow:
+      microposts: "Bài viết"
+      view_profile: "Xem hồ sơ"
+
+    follow:
+      follow: "Theo dõi"
+
+    unfollow:
+      unfollow: "Bỏ theo dõi"

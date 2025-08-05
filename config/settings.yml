@@ -10,6 +10,7 @@ defaults: &defaults
 
   host: "http://localhost:3000"
   digit_50: 50
+  digit_30: 30
 
   microposts:
     image_content_types:

@@ -1,0 +1,7 @@
+en:
+  relationships:
+    create:
+      not_found_user: "User not found"
+
+    destroy:
+      not_found_relationship: "Relationship not found"
