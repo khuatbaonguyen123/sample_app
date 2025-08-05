@@ -4,6 +4,7 @@ vi:
       title: "Trang chủ"
       link: "Trang chủ Ruby on Rails Tutorial"
       description_html: "Đây là trang chủ của ứng dụng mẫu %{link}."
+      micropost_feed: "Bài đăng"
 
     help:
       title: "Trợ giúp"
@@ -37,10 +38,14 @@ vi:
   error_messages:
     the_form_contains_html: "Biểu mẫu có %{count} lỗi."
 
+  micropost_form:
+    placeholder: "Bạn đang nghĩ gì?"
+    submit: "Đăng"
+
+  user_info:
+    view_profile: "Xem hồ sơ"
+    micropost_count: "Số lượng bài đăng: %{count}"
+
   time:
     formats:
       long: "%m/%d/%Y %H:%M"
-
-  microposts:
-    index:
-      title: "Bài đăng"

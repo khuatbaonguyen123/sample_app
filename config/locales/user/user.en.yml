@@ -23,6 +23,7 @@ en:
       created_at: "Created at:"
       updated_at: "Last updated at:"
       not_found: "Not found user!"
+      microposts_count: "Microposts count: %{count}"
 
     create:
       success_message: "User created successfully"

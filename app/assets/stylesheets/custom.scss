@@ -57,3 +57,18 @@ textarea {
 .dropdown-menu.active {
   display: block;
 }
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+
+  input {
+    border: 0;
+  }
+}

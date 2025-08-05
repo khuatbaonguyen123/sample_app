@@ -23,6 +23,7 @@ vi:
       created_at: "Được tạo lúc:"
       updated_at: "Được cập nhật lần cuối vào lúc:"
       not_found: "Không tìm thấy người dùng!"
+      microposts_count: "Số lượng bài viết: %{count}"
 
     create:
       success_message: "Người dùng tạo thành công"
